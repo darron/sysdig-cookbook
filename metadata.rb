@@ -4,7 +4,7 @@ maintainer       'Darron Froese'
 maintainer_email 'darron@froese.org'
 license          'Apache 2.0'
 description      'Installs/configures sysdig'
-version          '0.1.0'
+version          '0.2.0'
 recipe           'sysdig::default', 'Installs/configures sysdig'
 
 depends 'chef-sugar'
