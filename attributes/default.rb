@@ -18,6 +18,6 @@
 # limitations under the License.
 #
 
-default['sysdig']['package']['distribution'] = 'stable-amd64/'
+default['sysdig']['package']['distribution'] = 'stable-$(ARCH)/'
 default['sysdig']['package']['repo_url'] = 'http://download.draios.com/stable/deb'
-default['sysdig']['package']['repo_key'] = 'http://download.draios.com/DRAIOS-GPG-KEY.public'
+default['sysdig']['package']['repo_key'] = 'https://s3.amazonaws.com/download.draios.com/DRAIOS-GPG-KEY.public'
