@@ -3,7 +3,7 @@ require 'spec_helper'
 
 # Write integration tests with Serverspec - http://serverspec.org/
 describe 'sysdig::default' do
-  it 'does something' do
-    pending 'Replace this with meaningful tests'
+  describe package('sysdig') do
+    it { should be_installed }
   end
 end
