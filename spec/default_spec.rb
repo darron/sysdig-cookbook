@@ -5,7 +5,8 @@ require 'spec_helper'
 describe 'sysdig::default' do
   let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
 
-  it 'does something' do
-    pending 'Replace this with meaningful tests'
+  it 'installs sysdig' do
+    expect(chef_run).to install_apt_package('sysdig')
   end
+
 end

@@ -6,7 +6,7 @@ Requirements
 
 ### Platform:
 
-*List supported platforms here*
+Ubuntu 12.04, 13.04, 13.10
 
 ### Cookbooks:
 
@@ -22,7 +22,7 @@ Recipes
 
 ### sysdig::default
 
-*Explain what the recipe does here*
+Installs [sysdig](http://www.sysdig.org/)
 
 ### Packer Build
 
@@ -32,11 +32,11 @@ In order to build an Amazon AMI, DigitalOcean Droplet, Google Compute or Rackspa
     export SDK_USERNAME="username"  # Same as here: https://mycloud.rackspace.com/
     export SDK_PASSWORD="password-to-login" # Not the API key.
     export SDK_PROVIDER="rackspace-us" # Or rackspace-uk
-    
+
     # EC2 - can be found here: https://portal.aws.amazon.com/gp/aws/securityCredentials?
     export AWS_ACCESS_KEY="long-random-string"
     export AWS_SECRET_KEY="another-even-longer-long-random-string"
-    
+
     # Digital Ocean - get these here: https://cloud.digitalocean.com/api_access
     export DIGITALOCEAN_CLIENT_ID="long-random-string"
     export DIGITALOCEAN_API_KEY="another-long-random-string"

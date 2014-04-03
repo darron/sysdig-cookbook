@@ -19,3 +19,25 @@
 #
 
 include_recipe 'chef-sugar::default'
+
+if ubuntu?
+
+  apt_repository 'sysdig' do
+    uri node['sysdig']['package']['repo_url']
+    distribution node['sysdig']['package']['distribution']
+    key node['sysdig']['package']['repo_key']
+  end
+
+  bash 'install kernel headers' do
+    user 'root'
+    cwd '/tmp'
+    code <<-EOH
+      apt-get -qq -y install linux-headers-$(uname -r)
+    EOH
+  end
+
+  apt_package 'sysdig' do
+    action :install
+  end
+
+end

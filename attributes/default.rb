@@ -18,4 +18,6 @@
 # limitations under the License.
 #
 
-# Set meaningful node attributes here
+default['sysdig']['package']['distribution'] = 'stable-amd64/'
+default['sysdig']['package']['repo_url'] = 'http://download.draios.com/stable/deb'
+default['sysdig']['package']['repo_key'] = 'http://download.draios.com/DRAIOS-GPG-KEY.public'

@@ -8,3 +8,4 @@ version          '0.1.0'
 recipe           'sysdig::default', 'Installs/configures sysdig'
 
 depends 'chef-sugar'
+depends 'apt'
