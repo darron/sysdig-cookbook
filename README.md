@@ -41,7 +41,7 @@ In order to build an Amazon AMI, DigitalOcean Droplet, Google Compute or Rackspa
     export DIGITALOCEAN_CLIENT_ID="long-random-string"
     export DIGITALOCEAN_API_KEY="another-long-random-string"
 
-Building images with Google Compute requires more setup than just a few ENV vars. Once you setup your GCE account and enable billing, take a look [here](http://www.packer.io/docs/builders/googlecompute.html) and [here](https://github.com/mitchellh/packer/issues/809) for additional Packer specific information.
+Building images with Google Compute requires more setup than just a few ENV vars. Once you setup your GCE account and enable billing, take a look [here](http://www.packer.io/docs/builders/googlecompute.html) for additional Packer specific information.
 
 Testing
 -------
